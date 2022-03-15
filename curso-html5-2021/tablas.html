@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      
+
+    th,tfoot{
+        background-color: aquamarine;
+        border: solid black 1px;
+    }
+    col:nth-child(1){
+        background-color: aquamarine
+
+    }
+    tr:nth-child(4) td:nth-child(2){
+        background-color: greenyellow;
+        letter-spacing: 90px;
+        text-transform: uppercase;
+    }
+    tr:nth-child(4) td:nth-child(1){
+        background-color: greenyellow;
+
+    }
+    table{
+        border: 1px solid black;
+        padding-left: 5px;
+        border-collapse: collapse;
+    }
+    tr,td{
+        border: 1px solid black;
+        padding: 5px;
+    }
+    tfoot td{
+        text-align: center;
+    }
+
+    </style>
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <table>
+            <caption>HORARIO DE CLASES</caption>
+            <colgroup>
+                <col>
+                <col>
+
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>HORA</th>
+                    <th>LUNES</th>
+                    <th>MARTES</th>
+                    <th>MIERCOLES</th>
+                    <th>JUEVES</th>
+                    <th>VIERNES</th>
+                </tr>
+            </thead>
+            <tbody>
+    
+                <tr>
+                    <td>08:30-09:30</td>
+                    <td>matematicas</td>
+                    <td>matemticas</td>
+                    <td>sociales</td>
+                    <td>matematicas</td>
+                    <td>matematicas</th>
+                </tr>    
+                <tr>
+                    <td>09:30-10:25</td>
+                    <td>lenguas</td>
+                    <td>lenguas</td>
+                    <td>matematicas</td>
+                    <td>cinecias</td>
+                    <td>lenguas</th>
+                </tr>    
+                <tr>
+                    <td>10:25-11:20</td>
+                    <td>educacion fisica</td>
+                    <td>ciencias</td>
+                    <td>lenguas</td>
+                    <td>lenguas</td>
+                    <td>educacion fisica</th>
+                </tr>    
+                <tr>
+                    <td>11:20-11:50</td>
+                    <td colspan="5">recreo</td>
+                </tr>
+                <tr>
+                    <td>11:50-12:40</td>
+                    <td>ingles</td>
+                    <td>sociales</td>
+                    <td>ingles</td>
+                    <td>sociales</td>
+                    <td>ingles</th>
+                </tr>    
+                <tr>
+                    <td>12:40-13:20</td>
+                    <td>musica</td>
+                    <td>educacion fisica</td>
+                    <td>musica</td>
+                    <td>religion</td>
+                    <td>musica</th>
+                </tr>    
+                <tr>
+                    <td>13:20-14:00</td>
+                    <td>tegnologia</td>
+                    <td>frances</td>
+                    <td>tegnologia</td>
+                    <td>frances</td>
+                    <td>tegnologia</th>
+                </tr>    
+
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="5">total materias</td>
+                    <td>12</td>
+                </tr>
+            </tfoot>
+        </table>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
