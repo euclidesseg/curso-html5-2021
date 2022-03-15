@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="esta pagina es un curso de html esto contento porque sere desarrollador">
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/manifest.json">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>ESTO ES UN FORMULARIO</h1>
+        <p>los formularios en html permiten al usuario introducir datos para posteriormente enivalos a un servido para almecenarlo en una base de datos casi todas las paginas del mundo tienen un formulairo salbo las informativas </p>
+    </header>
+    <main>
+        <!--Asociar el label al imput-->
+        <form action="">
+            <label for="refe">NOMBRE</label>
+            <input id = "refe" type="password">
+            <button>ENVIAR</button>
+        </form> <br>
+        <!---input type button vs button-->
+
+        <div>
+            <form action="">
+                <label for="">botones</label>
+                <input type="button" value = "enviar input">
+                <button>Enviar</button>
+            </form>
+        </div><br>
+        <!--inputs para fechas-->
+        <form action="">
+            <label for="fecha">fecha</label>
+            <input type="date" id="fecha">
+            <button>enviar</button>
+        </form><br>
+        <form action="">
+            <label for="fech">fecha</label>
+            <input type="date" id="fech">
+            <input type="time" id="fech">
+            <button>enviar</button>
+        </form><br>
+        <!--IMPUTS PARA MOVILES-->
+        <form action="">
+            <div>
+                <label for="buscar">search</label>
+                <input type="search" id="buscar">
+            </div>
+            <div>
+                <label for="telefono">telefono</label>
+                <input type="tel" id="telefono">
+            </div>
+            <div>
+                <label for="mail">email</label>
+                <input type="email" id="mail">
+            </div>
+            <div>
+                <label for="clave">password</label>
+                <input type="password" id="clave">
+            </div>
+            <div>
+                <label for="link">URL</label>
+                <input type="url" id="link">
+            </div>
+        </form><br>
+        <!--IMPUTS RADIO
+            LOS IMPUTS DE TIPO RADIO PERMITEN SELECCIONAR ELEMENTOS DENTRO DE UNA LISTA DE OPCIONES 
+            ESTOS IMPUTS DEBEN IR ACOMPAÑADOS POR DOS ATRIBUTOS MAS NAME Y VALUE ELVALOR QUE SE LE DE AL ATRIBUTO NAME DE LE DEBE DAR A TODOS LOS RADIOS YA QUE ESTOS RADIOS PERTENEEN A UNA MISMA CATEGORIA-->
+            <form action="">
+                <h1>GENERO</h1>
+                <label for="m">MASCULINO</label>
+                <input type="radio" name="gender" id="m" value="masculino">
+                <label for="fm">FEMENINO</label>
+                <input type="radio" name="gender" id="fm" value="femenino">
+                <label for="d">DESCONOCIDO</label>
+                <input type="radio" name="gender" id="d" value="desconocido">
+            </form>
+        <!--IMPUTS CHECKBOX
+            estos son inputs de dos estados y su estructura es basicamente la misma
+            la diferencia es que en estos nos permitira escojer masd de una opcion
+            y nos permitira poner checked a todos los imputs que tengamos -->
+            <form action="">
+                <h1>LENGUAJES QUE CONOCES</h1>
+                <label for="html">HTML</label>
+                <input type="checkbox" name="lenguages" value=" html" id="html">
+                <label for="css">CSS</label>
+                <input type="checkbox" name="lenguages" value="css" id="css">
+                <label for="js">JAVASCRIPT</label>
+                <input type="checkbox" name="lenguages" value=" javascript" id="js">
+            </form>
+        <!--ELEMENTOS SELECT 
+            Estos elementos no son un input pero permiten seleccionar elementos de una lista desplegabe-->
+            <form action="">
+                <h1>Elementos seleccionables</h1>
+                <label for="select">Elija un Lenguaje</label>
+                <select name="lenguajes" id="select">
+                    <option value="html">HTML</option>
+                    <option value="css">css</option>
+                    <option value="javascript" selected>javascript</option>
+                </select>
+            </form>
+  
+        <!--CUANDO TENEMOS LISTAS DEMASIADO GRANDES PODEMOS AGRUPAR ESAS OPCIONES 
+            POR CATEGORIAS USANDO LA ETIQUETA OPTGROUP Y DENTRO DE ESTA EL ATRIBUTOI LAVEL PARA NOMBRAR LA CATEGORIA-->
+                     
+    <form action="">
+        <label for="mascotas">escoja la mascota</label>
+        <select name="masc" id="mascotas">
+            <optgroup label="4 patas">
+                <option value="peroo">perro</option>
+                <option value="gato">gato</option>
+                <option value="conejo">conejo</option>
+            </optgroup>
+            <optgroup label="aves">
+                <option value="loro">loro</option>
+                <option value="canario">canario</option>
+            </optgroup>
+            <optgroup label="otros">
+                <option value="serpiente">serpiente</option>
+                <option value="araña">araña</option>
+            </optgroup>
+        </select>               
+    </form>
+
+    <form>
+        <input type ="list" list="pets">
+        <datalist id="pets">
+           <option value="html"></option>
+           <option value="css"></option>
+           <option value="java"></option>
+           <option value="javascript"></option>
+           <option value="pyton"></option>
+        </datalist>
+
+    </form> 
+    <form action="">
+        <label for="uno">uno</label>
+        <input type="text" id="uno">
+        <button>enviar</button>
+    </form>
+         
+    <form action="">
+        <input type="list" list="lenguajes">
+        <datalist id="lenguajes">
+            <option value="css"></option>
+            <option value="java"></option>
+            <option value="javascript"></option>
+            <option value="html"></option>
+            <option value="pyton"></option>
+            <option value="sql"></option>
+            <option value="c#"></option>
+            <option value="php"></option>
+        </datalist>
+    </form>
+    <!--MAS ELEMENTOS PARA FORMULARIOS-->
+
+    <form action="">
+        <fieldset>
+            <legend>DATOS PERSONALES</legend>
+            <div>
+                <label for="name">Nombre</label>
+                <input type="text" id="name" placeholder="nombre">
+            </div>
+            <div>
+                <label for="surname">Apellido</label>
+                <input type="text" id="surname" placeholder="apellido">
+            </div>
+        </fieldset>
+        <input type="file"><br>
+
+        <label for="area">texto</label>
+        <textarea name="" id="area" cols="30" rows="10"></textarea>
+    </form>
+    
+    <form action="enviar.html" method = "get">
+       <label for="name">nombre</label>
+       <input type="text" id="name" name="nombre">
+       <label for="surname">apellido</label>
+       <input type="text" id="surnamee" name="apellido">
+       <input type="submit" value="enviar">
+    </form>
+</main>
+
+</body>     
+</html>
